@@ -1,0 +1,23 @@
+{
+	"name": "mxobs-gutenberg-blocks",
+	"version": "0.1.0",
+	"description": "Gutenberg Blocks",
+	"author": "Maksym Marko",
+	"license": "GPL-2.0-or-later",
+	"scripts": {
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"packages-update": "wp-scripts packages-update",
+		"plugin-zip": "wp-scripts plugin-zip",
+		"build": "wp-scripts build --webpack-src-dir=includes/gutenberg/blocks-generator/ --output-path=includes/gutenberg/custom-blocks/",
+		"start": "wp-scripts start --webpack-src-dir=includes/gutenberg/blocks-generator/ --output-path=includes/gutenberg/custom-blocks/",
+		"minify-js": "node includes/gutenberg/script-generator/index.js"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^26.6.0"
+	},
+	"dependencies": {
+		"uglify-js": "^3.17.4"
+	}
+}

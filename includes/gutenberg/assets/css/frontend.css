@@ -1,0 +1,59 @@
+/**
+ * This file contains styles for the editor and frontend
+ *
+ * @package Olena Blocks Set
+ * @author Maksym Marko <support@markomaksym.com.ua>
+ *
+ * @link https://markomaksym.com.ua/
+ */
+
+/*
+ * Custom blocks customization.
+ */
+
+/* block: "olena/floating-box" */
+.wp-block-olena-floating-box {
+    z-index: -1;
+}
+
+/*
+ * Animated Section Vertical.
+ */
+.is-style-animation-pointer {
+    position: relative;
+}
+.is-style-animation-pointer > * {
+    position: absolute;
+}
+.is-style-animation-descriptor:not(.active-nav) p {
+    display: none;
+}
+.is-style-animation-descriptor {
+    opacity: .5;
+}
+.is-style-animation-descriptor.active-nav {
+    opacity: 1;
+}
+
+/*
+ * Animated Section Horizontal.
+ */
+.wp-block-olena-animated-section-horizontal {
+    display: flex;
+    overflow: hidden;
+    overscroll-behavior: none;
+}
+.mx-animated-horizontal-content {
+    position: relative;
+}
+.mx-animated-horizontal-slider {
+    display: flex;
+    flex-wrap: nowrap;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    will-change: transform;
+}
+.mx-animated-horizontal-slider > * {
+    width: 100vw;
+}

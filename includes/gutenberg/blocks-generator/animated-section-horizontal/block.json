@@ -1,0 +1,34 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "olena/animated-section-horizontal",
+	"version": "0.1.0",
+	"title": "Animated Section (horizontal)",
+	"category": "widgets",
+	"icon": "format-gallery",
+	"description": "Add an Animated Section (horizontal). Nested elements will be animated.",
+	"supports": {
+		"html": false,
+		"anchor": true
+	},
+	"attributes": {
+		"start_position": {
+			"type": "string",
+			"source": "attribute",
+			"selector": ".wp-block-olena-animated-section-horizontal",
+			"attribute": "data-start-position",
+			"default": "top top"
+		},
+		"extras": {
+			"type": "string",
+			"source": "attribute",
+			"selector": ".wp-block-olena-animated-section-horizontal",
+			"attribute": "data-extras",
+			"default": ""
+		}
+	},
+	"textdomain": "olena",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

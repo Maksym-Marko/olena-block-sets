@@ -1,0 +1,28 @@
+/**
+ * This file contains styles for the editor and frontend
+ *
+ * @package Olena Theme
+ * @author Maksym Marko <support@markomaksym.com.ua>
+ *
+ * @link https://markomaksym.com.ua/
+ */
+
+/*
+ * Core blocks customization.
+ */
+
+/* block: "core/group" */
+body .wp-block-template-part .is-position-sticky {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+.is-style-animation-wrapper {
+    overflow: hidden;
+    position: relative !important;
+}
+.is-style-highlighted {
+    -webkit-box-shadow: 2px 2px 14px 0px rgba(0,0,0,0.21);
+    -moz-box-shadow: 2px 2px 14px 0px rgba(0,0,0,0.21);
+    box-shadow: 2px 2px 14px 0px rgba(0,0,0,0.21);
+}

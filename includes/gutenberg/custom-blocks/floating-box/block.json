@@ -1,0 +1,55 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "olena/floating-box",
+  "version": "0.1.0",
+  "title": "Floating Box",
+  "category": "widgets",
+  "icon": "align-wide",
+  "description": "Add a Floating Box",
+  "supports": {
+    "html": false,
+    "anchor": true
+  },
+  "attributes": {
+    "orientation": {
+      "type": "string",
+      "source": "attribute",
+      "selector": ".wp-block-olena-floating-box",
+      "attribute": "data-orientation",
+      "default": "1"
+    },
+    "position_left": {
+      "type": "string",
+      "source": "attribute",
+      "selector": ".wp-block-olena-floating-box",
+      "attribute": "data-position-left",
+      "default": "0"
+    },
+    "position_top": {
+      "type": "string",
+      "source": "attribute",
+      "selector": ".wp-block-olena-floating-box",
+      "attribute": "data-position-top",
+      "default": "0"
+    },
+    "position_right": {
+      "type": "string",
+      "source": "attribute",
+      "selector": ".wp-block-olena-floating-box",
+      "attribute": "data-position-right",
+      "default": "0"
+    },
+    "position_bottom": {
+      "type": "string",
+      "source": "attribute",
+      "selector": ".wp-block-olena-floating-box",
+      "attribute": "data-position-bottom",
+      "default": "0"
+    }
+  },
+  "textdomain": "olena",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

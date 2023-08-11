@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "olena/responsive-box",
+	"version": "0.1.0",
+	"title": "Responsive Box",
+	"category": "widgets",
+	"icon": "align-wide",
+	"description": "Add a Responsive Box",
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"unique_class": {
+			"type": "string",
+			"default": "mx-responsive-box"
+		},
+		"breakpoint": {
+			"type": "string",
+			"source": "attribute",
+			"selector": ".mx-responsive-box",
+			"attribute": "data-breakpoint",
+			"default": "all"
+		}		
+	},	
+	"textdomain": "olena",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}
