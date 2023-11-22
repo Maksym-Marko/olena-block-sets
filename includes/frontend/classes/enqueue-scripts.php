@@ -78,8 +78,8 @@ class MXOBSEnqueueScriptsFrontend
              *  Frontend Styles.
              * */
             wp_enqueue_style(
-                'olena-sets-frontend-style',
-                MXOBS_PLUGIN_URL . 'includes/gutenberg/assets/css/frontend.css',
+                'olena-frontend-style',
+                MXOBS_PLUGIN_URL . 'includes/frontend/assets/css/frontend.css',
                 array(),
                 MXOBS_PLUGIN_VERSION
             );
@@ -101,11 +101,21 @@ class MXOBSEnqueueScriptsFrontend
         {
 
             /**
+             * Editor Styles.
+             * */
+            wp_enqueue_style(
+                'olena-editor-style',
+                MXOBS_PLUGIN_URL . 'includes/frontend/assets/css/editor.css',
+                array(),
+                MXOBS_PLUGIN_VERSION
+            );
+
+            /**
              * Editor Scripts.
              * */
             wp_enqueue_script(
                 'olena-sets-editor-script',
-                MXOBS_PLUGIN_URL . 'includes/gutenberg/assets/js/editor.js',
+                MXOBS_PLUGIN_URL . 'includes/frontend/assets/js/editor.js',
                 array('wp-blocks'),
                 MXOBS_PLUGIN_VERSION
             );
@@ -119,8 +129,8 @@ class MXOBSEnqueueScriptsFrontend
              * Editor/Frontend Styles.
              * */
             wp_enqueue_style(
-                'olena-sets-editor-frontend-style',
-                MXOBS_PLUGIN_URL . 'includes/gutenberg/assets/css/editor-frontend.css',
+                'olena-editor-frontend-style',
+                MXOBS_PLUGIN_URL . 'includes/frontend/assets/css/editor-frontend.css',
                 array(),
                 MXOBS_PLUGIN_VERSION
             );

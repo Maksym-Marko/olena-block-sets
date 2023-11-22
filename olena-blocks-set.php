@@ -5,7 +5,7 @@ Plugin Name: Olena Blocks Set
 Plugin URI: https://github.com/Maxim-us/olena-block-sets
 Description: Set of Gutenberg blocks
 Author: Marko Maksym
-Version: 1.0
+Version: 1.1.0
 Author URI: https://markomaksym.com.ua
 Plugin Starter Kit Name: WPP Generator v5.3.4
 Plugin Starter Kit URL: https://markomaksym.com.ua/wp-plugin-skeleton-generator/

@@ -1,1 +1,13 @@
-.wp-block-olena-floating-box{display:inline-block;height:auto;min-height:50px;min-width:50px;position:absolute!important;width:auto}
+/*!**************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./includes/gutenberg/blocks-generator/responsive-box/style.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************/
+.wp-block-olena-floating-box {
+  width: auto;
+  height: auto;
+  display: inline-block;
+  min-width: 50px;
+  min-height: 50px;
+  position: absolute !important;
+}
+
+/*# sourceMappingURL=style-index.css.map*/

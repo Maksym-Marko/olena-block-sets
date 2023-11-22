@@ -31,19 +31,14 @@ class MXOBSGutenberg
     {
                 
         /**
-         * Animated Section Horizontal.
+         * Animated Section.
          * */
-        add_action('init', array($this, 'animated_section_horizontal'));
+        add_action('init', array($this, 'animated_section'));
 
         /**
          * Animated Box.
          * */
         add_action('init', array($this, 'animated_box'));
-
-        /**
-         * Animated Section Vertical.
-         * */
-        add_action('init', array($this, 'animated_section_vertical'));
 
         /**
          * Responsive Box.
@@ -65,20 +60,19 @@ class MXOBSGutenberg
          * */
         add_action('init', array($this, 'content_slider'));
     }
-    
+
     /**
-     * Animated Section Horizontal custom block type.
-     *
-     * @since 1.0.0
+     * Animated Section custom block type.
      * 
-     * @return void Register a animated section horizontal custom block.
+     * @since 1.1.0
+     * 
+     * @return void Register a Animated Section custom block.
      */
-    public function animated_section_horizontal()
+    public function animated_section()
     {
 
-        register_block_type(MXOBS_PLUGIN_ABS_PATH . 'includes/gutenberg/custom-blocks/animated-section-horizontal');
+        register_block_type(MXOBS_PLUGIN_ABS_PATH . 'includes/gutenberg/custom-blocks/animated-section');
     }
-
     
     /**
      * Animated Box custom block type.
@@ -91,19 +85,6 @@ class MXOBSGutenberg
     {
 
         register_block_type(MXOBS_PLUGIN_ABS_PATH . 'includes/gutenberg/custom-blocks/animated-box');
-    }
-
-    /**
-     * Animated Section Vertical custom block type.
-     *
-     * @since 1.0.0
-     * 
-     * @return void Register a animated section vertical custom block.
-     */
-    public function animated_section_vertical()
-    {
-
-        register_block_type(MXOBS_PLUGIN_ABS_PATH . 'includes/gutenberg/custom-blocks/animated-section-vertical');
     }
 
     /**

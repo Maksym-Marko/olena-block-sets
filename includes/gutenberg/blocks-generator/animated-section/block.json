@@ -1,0 +1,48 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "olena/animated-section",
+	"version": "0.1.0",
+	"title": "Animated Section",
+	"category": "widgets",
+	"icon": "format-gallery",
+	"description": "Add an Animated Section",
+	"supports": {
+		"html": false,
+		"anchor": true
+	},
+	"attributes": {
+		"section_type": {
+			"type": "string",
+			"source": "attribute",
+			"selector": ".wp-block-olena-animated-section",
+			"attribute": "data-section-type",
+			"default": "vertical"
+		},
+		"section_height": {
+			"type": "string",
+			"source": "attribute",
+			"selector": ".wp-block-olena-animated-section",
+			"attribute": "data-section-height",
+			"default": "4000"
+		},
+		"start_position": {
+			"type": "string",
+			"source": "attribute",
+			"selector": ".wp-block-olena-animated-section",
+			"attribute": "data-start-position",
+			"default": "top top"
+		},
+		"extras": {
+			"type": "string",
+			"source": "attribute",
+			"selector": ".wp-block-olena-animated-section",
+			"attribute": "data-extras",
+			"default": ""
+		}
+	},
+	"textdomain": "olena",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

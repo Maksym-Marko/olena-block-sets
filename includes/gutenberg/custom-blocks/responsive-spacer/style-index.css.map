@@ -1,0 +1,1 @@
+{"version":3,"file":"responsive-spacer/style-index.css","mappings":";;;AAAA;EACC;AACD,C","sources":["webpack://mxobs-gutenberg-blocks/./includes/gutenberg/blocks-generator/responsive-spacer/style.scss"],"sourcesContent":[".mx-responsive-block-spacer {\r\n\tclear: both;\r\n}"],"names":[],"sourceRoot":""}
