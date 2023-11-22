@@ -166,8 +166,9 @@ class MXOBSRouteRegistrar
     public function createAdminMainMenu()
     {
 
-        add_menu_page( __( $this->properties['page_title'], 'mxobs-domain' ),
-            __( $this->properties['menu_title'], 'mxobs-domain' ),
+        add_menu_page( 
+            sprintf( esc_html__( '%s', 'olena-blocks-set' ), $this->properties['page_title']),
+            sprintf( esc_html__( '%s', 'olena-blocks-set' ), $this->properties['menu_title']),
             $this->properties['capability'],
             $this->slug,
             [ $this, 'viewConnector' ],
@@ -183,8 +184,8 @@ class MXOBSRouteRegistrar
         
         // create a sub menu
         add_submenu_page( $this->slug,
-            __( $this->properties['page_title'], 'mxobs-domain' ),
-            __( $this->properties['menu_title'], 'mxobs-domain' ),
+            sprintf( esc_html__( '%s', 'olena-blocks-set' ), $this->properties['page_title']),
+            sprintf( esc_html__( '%s', 'olena-blocks-set' ), $this->properties['menu_title']),
             $this->properties['capability'],
             $this->subMenuSlug,
             [ $this, 'viewConnector' ]
@@ -200,8 +201,8 @@ class MXOBSRouteRegistrar
         
         // create a settings menu
         add_options_page(
-            __( $this->properties['page_title'], 'mxobs-domain' ),
-            __( $this->properties['menu_title'], 'mxobs-domain' ),
+            sprintf( esc_html__( '%s', 'olena-blocks-set' ), $this->properties['page_title']),
+            sprintf( esc_html__( '%s', 'olena-blocks-set' ), $this->properties['menu_title']),
             $this->properties['capability'],
             $this->subMenuSlug,
             [ $this, 'viewConnector' ]
@@ -211,7 +212,8 @@ class MXOBSRouteRegistrar
         public function createSettingsLink( $links )
         {
 
-            $settingsLink = '<a href="' . get_admin_url() . 'admin.php?page=' . $this->subMenuSlug . '">' . __( $this->properties['menu_title'], 'mxobs-domain' ) . '</a>'; // options-general.php
+            $settingsLink = '<a href="' . get_admin_url() . 'admin.php?page=' . $this->subMenuSlug . '">' . 
+            sprintf( esc_html__( '%s', 'olena-blocks-set' ), $this->properties['menu_title']) . '</a>'; // options-general.php
 
             array_push( $links, $settingsLink );
 

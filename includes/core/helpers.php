@@ -32,39 +32,6 @@ function mxobsUseModel( $model ) {
 }
 
 /*
-* Debugging
-*/
-function mxobsDebugToFile( $content ) {
-
-    $content = mxobsContentToString( $content );
-
-    $path = MXOBS_PLUGIN_ABS_PATH . 'mx-debug' ;
-
-    if (!file_exists($path)) {
-
-        mkdir( $path, 0777, true );
-
-        file_put_contents( $path . '/mx-debug.txt', $content );
-
-    } else {
-
-        file_put_contents( $path . '/mx-debug.txt', $content );
-
-    }
-
-}
-    // pretty debug text to the file
-    function mxobsContentToString( $content ) {
-
-        ob_start();
-
-        var_dump( $content );
-
-        return ob_get_clean();
-
-    }
-
-/*
 * Manage posts columns. Add column to position
 */
 function mxobsInsertNewColumnToPosition( array $columns, int $position, array $newColumn ) {
@@ -85,7 +52,7 @@ function mxobsAdminRedirect( $url ) {
     if (!$url) return;
 
     add_action( 'admin_footer', function() use ( $url ) {
-        echo "<script>window.location.href = '$url';</script>";
+        printf("<script>window.location.href = '%s';</script>", esc_url_raw($url));
     } );
 
 }

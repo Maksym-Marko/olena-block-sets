@@ -27,7 +27,7 @@ class MXOBSEnqueueScriptsFrontend
             // owl.carousel.min.css
             wp_enqueue_style(
                 'olena-sets-owl-carousel-style',
-                MXOBS_PLUGIN_URL . 'includes/gutenberg/assets/packages/owl-carousel/owl.carousel.min.css',
+                'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css',
                 array(),
                 MXOBS_PLUGIN_VERSION
             );
@@ -35,7 +35,7 @@ class MXOBSEnqueueScriptsFrontend
             // owl.carousel.min.js
             wp_enqueue_script(
                 'olena-sets-owl-carousel-script',
-                MXOBS_PLUGIN_URL . 'includes/gutenberg/assets/packages/owl-carousel/owl.carousel.min.js',
+                'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js',
                 array('jquery'),
                 MXOBS_PLUGIN_VERSION,
                 true
@@ -46,7 +46,7 @@ class MXOBSEnqueueScriptsFrontend
              * */
             wp_enqueue_script(
                 'olena-sets-lenis-script',
-                MXOBS_PLUGIN_URL . 'includes/gutenberg/assets/packages/lenis/lenis.min.js',
+                'https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.28/bundled/lenis.min.js',
                 array(),
                 MXOBS_PLUGIN_VERSION,
                 true
@@ -57,7 +57,7 @@ class MXOBSEnqueueScriptsFrontend
              * */
             wp_enqueue_script(
                 'olena-sets-gsap-script',
-                MXOBS_PLUGIN_URL . 'includes/gutenberg/assets/packages/gsap/gsap.min.js',
+                'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js',
                 MXOBS_PLUGIN_VERSION,
                 '3.12.2',
                 true
@@ -68,7 +68,7 @@ class MXOBSEnqueueScriptsFrontend
              * */
             wp_enqueue_script(
                 'olena-sets-scrolltrigger-script',
-                MXOBS_PLUGIN_URL . 'includes/gutenberg/assets/packages/gsap/scrollTrigger.min.js',
+                'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js',
                 array('olena-sets-gsap-script'),
                 '3.12.2',
                 true

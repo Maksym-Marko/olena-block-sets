@@ -22,7 +22,7 @@ if (!defined('ABSPATH')) exit;
 /*
 * Define MXOBS_PLUGIN_PATH
 *
-* E:\OpenServer\domains\my-domain.com\wp-content\plugins\olena-block-sets-1691682916\olena-block-sets-1691682916.php
+* E:\OpenServer\domains\my-domain.com\wp-content\plugins\olena-block-sets\olena-block-sets.php
 */
 if (!defined('MXOBS_PLUGIN_PATH')) {
 
@@ -33,7 +33,7 @@ if (!defined('MXOBS_PLUGIN_PATH')) {
 /*
 * Define MXOBS_PLUGIN_URL
 *
-* Return http://my-domain.com/wp-content/plugins/olena-block-sets-1691682916/
+* Return http://my-domain.com/wp-content/plugins/olena-block-sets/
 */
 if (!defined('MXOBS_PLUGIN_URL')) {
 
@@ -44,7 +44,7 @@ if (!defined('MXOBS_PLUGIN_URL')) {
 /*
 * Define MXOBS_PLUGN_BASE_NAME
 *
-* 	Return olena-block-sets-1691682916/olena-block-sets-1691682916.php
+* 	Return olena-block-sets/olena-block-sets.php
 */
 if (!defined( 'MXOBS_PLUGN_BASE_NAME')) {
 
@@ -64,7 +64,7 @@ if (!defined('MXOBS_TABLE_SLUG')) {
 /*
 * Define MXOBS_PLUGIN_ABS_PATH
 * 
-* E:\OpenServer\domains\my-domain.com\wp-content\plugins\olena-block-sets-1691682916/
+* E:\OpenServer\domains\my-domain.com\wp-content\plugins\olena-block-sets/
 */
 if (!defined( 'MXOBS_PLUGIN_ABS_PATH')) {
 
@@ -88,7 +88,7 @@ if (!defined('MXOBS_PLUGIN_VERSION')) {
 if (!defined('MXOBS_MAIN_MENU_SLUG')) {
 
 	// version
-	define( 'MXOBS_MAIN_MENU_SLUG', 'mxobs-olena-block-sets-1691682916-main-page' );
+	define( 'MXOBS_MAIN_MENU_SLUG', 'mxobs-olena-block-sets-main-page' );
 
 }
 
@@ -98,7 +98,7 @@ if (!defined('MXOBS_MAIN_MENU_SLUG')) {
 if (!defined( 'MXOBS_SINGLE_TABLE_ITEM_MENU')) {
 
 	// single table item menu
-	define( 'MXOBS_SINGLE_TABLE_ITEM_MENU', 'mxobs-olena-block-sets-1691682916-single-page' );
+	define( 'MXOBS_SINGLE_TABLE_ITEM_MENU', 'mxobs-olena-block-sets-single-page' );
 
 }
 
@@ -108,7 +108,7 @@ if (!defined( 'MXOBS_SINGLE_TABLE_ITEM_MENU')) {
 if (!defined('MXOBS_CREATE_TABLE_ITEM_MENU')) {
 
 	// table item menu
-	define( 'MXOBS_CREATE_TABLE_ITEM_MENU', 'mxobs-olena-block-sets-1691682916-create-item-page' );
+	define( 'MXOBS_CREATE_TABLE_ITEM_MENU', 'mxobs-olena-block-sets-create-item-page' );
 
 }
 
@@ -141,7 +141,7 @@ if (!class_exists('MXOBSOlenaBlockSets')) {
 	function mxobs_translate()
 	{
 
-		load_plugin_textdomain( 'mxobs-domain', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+		load_plugin_textdomain( 'olena-blocks-set', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 
 	}
 

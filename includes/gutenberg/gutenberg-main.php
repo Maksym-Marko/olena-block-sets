@@ -1,5 +1,8 @@
 <?php
 
+// Exit if accessed directly
+if (!defined('ABSPATH')) exit;
+
 /**
  * Here you can register your own custom blocks.
  *
